@@ -11,11 +11,11 @@
   height: 80%;
   width: 80%;
   border: solid 1px black;
-  border-radius: 0.3rem;
+  border-radius: 0.5rem;
   display: flex;
   flex-direction: column;
-  box-shadow: 1px 1px 14px 3px black;
-  overflow: hidden; }
+  overflow: hidden;
+  box-shadow: 1px 1px 14px 3px black; }
 
 .importantWord {
   color: #aa5cdb; }
@@ -24,13 +24,12 @@
   background: #1b1938;
   font-size: 15px;
   font-family: "Inter", sans-serif;
-  max-height: 70%;
-  padding: 2rem;
+  padding: 1rem;
   display: flex;
+  flex-grow: 1;
   flex-direction: column;
-  justify-content: center;
   text-align: center;
-  align-items: center; }
+  line-height: 1.4rem; }
 
 .mainContainer__info > h2 {
   color: white;
@@ -64,19 +63,62 @@
   background-repeat: no-repeat;
   background-size: cover; }
 
+@media (min-width: 500px) {
+  .mainContainer__post {
+    height: 70%; }
+
+  .stats {
+    display: flex;
+    justify-content: space-evenly; }
+
+  .mainContainer__info h2 {
+    font-size: 2rem;
+    line-height: 2rem; } }
+@media (min-width: 800px) {
+  .mainContainer__post {
+    border-radius: 1rem;
+    flex-direction: row-reverse;
+    height: 60%; }
+
+  .mainContainer__info {
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2.8rem 3rem;
+    text-align: start; }
+
+  .mainContainer__info h2 {
+    font-size: 2.2rem;
+    line-height: 2.2rem; }
+
+  .mainContainer__imgContainer {
+    background-color: #aa5cdb;
+    background-image: url(../images/image-header-desktop.jpg);
+    background-blend-mode: hard-light;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+
+  .stats {
+    display: flex;
+    justify-content: space-between; } }
 .attribution {
   position: absolute;
   bottom: 0;
   max-width: 80vw;
   text-align: center;
   color: white;
-  font-size: 1.2rem;
+  font-size: 1rem;
   line-height: 1.3rem; }
 
 .attribution a {
   color: #aa5cdb;
   text-decoration: none; }
 
+@media (min-width: 500px) {
+  .attribution {
+    font-size: 1.1rem; } }
 * {
   padding: 0;
   margin: 0;
