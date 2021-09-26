@@ -85,16 +85,8 @@
     line-height: 2.2rem;
   }
   .mainContainer__imgContainer{
-    background-color: $colorSoftViolet;
     background-image: url(../images/image-header-desktop.jpg);
-    background-blend-mode:hard-light; //multiply
-    width: 100%;
-    height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
   }
-
   .stats{
     display: flex;
     justify-content: space-between;
