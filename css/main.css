@@ -1,0 +1,85 @@
+.mainContainer {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #090b1a;
+  position: relative; }
+
+.mainContainer__post {
+  height: 80%;
+  width: 80%;
+  border: solid 1px black;
+  border-radius: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1px 1px 14px 3px black;
+  overflow: hidden; }
+
+.importantWord {
+  color: #aa5cdb; }
+
+.mainContainer__info {
+  background: #1b1938;
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+  max-height: 70%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center; }
+
+.mainContainer__info > h2 {
+  color: white;
+  font-weight: 700; }
+
+.statistics span {
+  color: white;
+  font-size: 15px; }
+
+.mainContainer__info > p {
+  color: rgba(255, 255, 255, 0.75);
+  margin-top: 0.8rem; }
+
+.statistics p {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: "Lexend Deca", sans-serif;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: 400; }
+
+.statistics {
+  margin-top: 0.8rem; }
+
+.mainContainer__imgContainer {
+  background-color: #aa5cdb;
+  background-image: url(../images/image-header-mobile.jpg);
+  background-blend-mode: hard-light;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  max-width: 80vw;
+  text-align: center;
+  color: white;
+  font-size: 1.2rem;
+  line-height: 1.3rem; }
+
+.attribution a {
+  color: #aa5cdb;
+  text-decoration: none; }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+/*# sourceMappingURL=main.css.map */

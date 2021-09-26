@@ -1,0 +1,26 @@
+//Layout
+$resolutionMobile: 375px;
+$resolutionDesktop: 1440px;
+
+//colors
+    //primary
+    $colorVeryDarkBlue: hsl(233, 47%, 7%);            //Main background
+    $colorDarkDesaturatedBlue: hsl(244, 38%, 16%);    //card background
+    $colorSoftViolet: hsl(277, 64%, 61%);             //Accent
+
+    //Neutral
+    $colorWhite: hsl(0, 0%, 100%);                              //main heading, stats
+    $colorSlightlyTransparentWhite1: hsla(0, 0%, 100%, 0.75);   //main paragraph
+    $colorSlightlyTransparentWhite2: hsla(0, 0%, 100%, 0.6);    //stat headings
+
+//Typography
+
+  //Body Copy
+
+  $fontSize: 15px;
+
+  //Fonts
+  $fontIner: 'Inter', sans-serif;
+  $fontLexend: 'Lexend Deca', sans-serif;;
+  $fontWeightLight: 400;
+  $fontrWeightStrong: 700;

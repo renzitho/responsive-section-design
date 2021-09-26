@@ -1,0 +1,61 @@
+.mainContainer__post{
+  height: 80%;
+  width: 80%;
+  border: solid 1px black ;
+  border-radius: 0.3rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 1px 1px 14px 3px black;
+  overflow: hidden;
+}
+.importantWord{
+  color: $colorSoftViolet;
+}
+.mainContainer__info{
+  background: $colorDarkDesaturatedBlue;
+  font-size: $fontSize;
+  font-family: $fontIner;
+  max-height: 70%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.mainContainer__info>h2 {
+  color: $colorWhite;
+  font-weight: $fontrWeightStrong;
+}
+.statistics span{
+  color: $colorWhite;
+  font-size: $fontSize;
+}
+.mainContainer__info>p{
+  color: $colorSlightlyTransparentWhite1;
+  margin-top: 0.8rem;
+}
+.statistics p{
+  color: $colorSlightlyTransparentWhite2;
+  font-family: $fontLexend;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: $fontWeightLight;
+}
+.statistics{
+  margin-top: 0.8rem;
+}
+
+.mainContainer__imgContainer{
+  background-color: $colorSoftViolet;
+  background-image: url(../images/image-header-mobile.jpg);
+  background-blend-mode:hard-light; //multiply
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media(min-width: $resolutionMobile){
+
+}
