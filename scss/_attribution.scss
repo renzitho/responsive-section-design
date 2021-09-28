@@ -9,6 +9,8 @@
 }
 .attribution a{
   color: $colorSoftViolet;
+}
+.attribution a:hover{
   text-decoration: none;
 }
 @media(min-width: $resolutionTablet){

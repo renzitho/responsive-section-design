@@ -16,52 +16,44 @@
   flex-direction: column;
   overflow: hidden;
   box-shadow: 1px 1px 14px 3px black; }
-
-.importantWord {
-  color: #aa5cdb; }
-
-.mainContainer__info {
-  background: #1b1938;
-  font-size: 15px;
-  font-family: "Inter", sans-serif;
-  padding: 1rem;
-  display: flex;
-  flex-grow: 1;
-  flex-direction: column;
-  text-align: center;
-  line-height: 1.4rem; }
-
-.mainContainer__info > h2 {
-  color: white;
-  font-weight: 700; }
-
-.statistics span {
-  color: white;
-  font-size: 15px; }
-
-.mainContainer__info > p {
-  color: rgba(255, 255, 255, 0.75);
-  margin-top: 0.8rem; }
-
-.statistics p {
-  color: rgba(255, 255, 255, 0.6);
-  font-family: "Lexend Deca", sans-serif;
-  text-transform: uppercase;
-  font-size: 0.7rem;
-  font-weight: 400; }
-
-.statistics {
-  margin-top: 0.8rem; }
-
-.mainContainer__imgContainer {
-  background-color: #aa5cdb;
-  background-image: url(../images/image-header-mobile.jpg);
-  background-blend-mode: hard-light;
-  width: 100%;
-  height: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
+  .mainContainer__post .mainContainer__imgContainer {
+    background-color: #aa5cdb;
+    background-image: url(../images/image-header-mobile.jpg);
+    background-blend-mode: hard-light;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  .mainContainer__post .mainContainer__info {
+    background: #1b1938;
+    font-size: 15px;
+    font-family: "Inter", sans-serif;
+    padding: 1rem;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    text-align: center;
+    line-height: 1.4rem; }
+    .mainContainer__post .mainContainer__info > h1 {
+      color: white;
+      font-weight: 700; }
+      .mainContainer__post .mainContainer__info > h1 .importantWord {
+        color: #aa5cdb; }
+    .mainContainer__post .mainContainer__info > p {
+      color: rgba(255, 255, 255, 0.75);
+      margin-top: 0.8rem; }
+    .mainContainer__post .mainContainer__info .statistics {
+      margin-top: 0.8rem; }
+      .mainContainer__post .mainContainer__info .statistics p {
+        color: rgba(255, 255, 255, 0.6);
+        font-family: "Lexend Deca", sans-serif;
+        text-transform: uppercase;
+        font-size: 0.7rem;
+        font-weight: 400; }
+      .mainContainer__post .mainContainer__info .statistics span {
+        color: white;
+        font-size: 15px; }
 
 @media (min-width: 500px) {
   .mainContainer__post {
@@ -78,24 +70,31 @@
   .mainContainer__post {
     border-radius: 1rem;
     flex-direction: row-reverse;
-    height: 60%; }
-
-  .mainContainer__info {
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 2.8rem 3rem;
+    height: 60%;
     text-align: start; }
-
-  .mainContainer__info h2 {
-    font-size: 2.2rem;
-    line-height: 2.2rem; }
-
-  .mainContainer__imgContainer {
-    background-image: url(../images/image-header-desktop.jpg); }
-
-  .stats {
-    display: flex;
-    justify-content: space-between; } }
+    .mainContainer__post .mainContainer__imgContainer {
+      background-image: url(../images/image-header-desktop.jpg); }
+    .mainContainer__post .mainContainer__info {
+      flex-direction: column;
+      justify-content: space-around;
+      text-align: start;
+      padding: 3rem 0 3rem 3rem;
+      flex-grow: 0;
+      max-width: 90%; }
+      .mainContainer__post .mainContainer__info > h1 {
+        font-size: 2.2rem;
+        line-height: 2.2rem;
+        max-width: 90%; }
+      .mainContainer__post .mainContainer__info > p {
+        max-width: 90%; }
+      .mainContainer__post .mainContainer__info .stats {
+        display: flex;
+        justify-content: flex-start; }
+        .mainContainer__post .mainContainer__info .stats .statistics {
+          margin-right: 3rem; }
+          .mainContainer__post .mainContainer__info .stats .statistics span {
+            font-size: 1.4rem;
+            font-weight: 700; } }
 .attribution {
   position: absolute;
   bottom: 0.4rem;
@@ -106,7 +105,9 @@
   line-height: 1.3rem; }
 
 .attribution a {
-  color: #aa5cdb;
+  color: #aa5cdb; }
+
+.attribution a:hover {
   text-decoration: none; }
 
 @media (min-width: 500px) {
